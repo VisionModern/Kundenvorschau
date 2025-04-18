@@ -1,0 +1,263 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid black;
+}
+
+.logo {
+  font-weight: bold;
+  padding: 5px 10px;
+  max-height: 80px;
+  max-width: auto;
+}
+
+.menu {
+  font-size: 24px;
+}
+
+.red-section {
+  background: linear-gradient(90deg, #DFC5B6 -30%, #FF5967 100%);
+  color: white;
+  text-align: center;
+  padding: 20px 10px 0 10px;
+  position: relative;
+}
+
+.stars {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+	position: relative;
+}
+
+.circle {
+  border: 2px solid white;
+  border-radius: 50%;
+  padding: 10px;
+  margin: 0 5px;
+}
+
+.star {
+  color: blue;
+}
+
+.pulse-label {
+  margin-top: 10px;
+  font-style: italic;
+}
+
+.pulse-svg-wrapper {
+  width: 100%;
+  height: 40px;
+  overflow: hidden;
+  line-height: 0;
+  position: relative;
+}
+
+.pulse-svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  padding: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 5px 0;
+}
+
+.btn {
+  border-radius: 8px;
+  background-color: #FF5967;
+  color: white;
+  padding: 10px;
+  border: none;
+  width: 100%;
+  margin-top: 10px;
+  font-size: 16px;
+  box-shadow: 5px 5px 5px 0.5px grey;
+}
+
+.btn:hover {
+  background-color: #FF5967;
+  transform: translateY(-2px);
+  box-shadow: 5px 5px 5px 0.5px grey;
+  color: rgba(0, 0, 255, 0.226);
+  transition: ease-in 0.1s;
+}
+
+.contact {
+  border-radius: 8px;
+  margin-top: 20px;
+  background-color: #FF5967;
+  color: white;
+  padding: 10px;
+  box-shadow: 5px 5px 5px 0.5px grey;
+}
+
+.text-box {
+  border-radius: 8px;
+  margin-top: 20px;
+  padding: 20px;
+  box-shadow: 5px 5px 5px 0.5px grey;
+}
+
+.profile-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid white;
+  object-fit: cover;
+	margin-left: -15px;
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+	transition: transform 0.3s ease;
+	background-color: white;
+}
+
+.profile-pic:first-child {
+	margin-left: 0;
+}
+
+.profile-pic:hover {
+	transform: scale(1.05);
+	z-index: 1;
+}
+
+.star-pic {
+  border-color: blue;
+}
+
+#menu-toggle {
+  text-decoration: none;
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  font-size: 35px;
+  cursor: pointer;
+  z-index: 1000;
+  background-color: transparent;
+  border: none;
+}
+
+#nav-menu {
+  position: absolute;
+  top: 80px; 
+  right: 40px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px 20px;
+  display: none;
+  z-index: 999;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  text-decoration: none;
+}
+
+#nav-menu.active {
+  text-decoration: none;
+  display: block;
+}
+
+#nav-menu ul {
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#nav-menu li {
+  text-decoration: none;
+  margin: 10px 0;
+}
+
+.long-text {
+  margin-top: 20px;
+  margin-left: 20%;
+  text-align: left;
+  max-width: 800px;
+  margin-bottom: 20px;
+}
+.highlight {
+  color: red;
+}
+
+.faq-section {
+  margin-top: 20px;
+  background: #f4f4f4;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 100%;
+  font-family: sans-serif;
+  border-color: #333;
+}
+
+.faq-section h2 {
+  text-align: left;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.faq-section h2 span {
+  color: red;
+  border-bottom: 2px solid red;
+}
+
+.accordion-item {
+  border-top: 1px solid #ddd;
+  background: #fff;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.accordion-header {
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  padding: 15px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  color: #333;
+}
+
+.accordion-header::before {
+  content: '+';
+  position: absolute;
+  right: 20px;
+  font-size: 20px;
+  transition: transform 0.3s;
+}
+
+.accordion-header.active::before {
+  content: '-';
+  transform: rotate(180deg);
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  background: #fff;
+  padding: 0 20px;
+}
+
+.accordion-content p {
+  padding: 10px 0;
+  margin: 0;
+  color: #555;
+}
