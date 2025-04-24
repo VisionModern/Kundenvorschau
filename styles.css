@@ -231,6 +231,7 @@ li {
   margin-bottom: 20px;
   max-width: 800px;
   text-align: left;
+  align-content: center;
   width: calc(100% - 80px);
   margin-left: 24px;
 }
@@ -392,5 +393,7 @@ li {
 }
 
 .underline {
-  text-decoration: underline;
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 30px;
 }
