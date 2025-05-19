@@ -84,7 +84,15 @@ body {
   }
 }
 
+.mittel-text {
+  text-align: center;
+  font-size: 120%;
+}
 
+.grey {
+  color: grey;
+  size: 80%
+}
 
 .content {
   padding: 20px;
